@@ -8,6 +8,7 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
      <style>
         /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -452,6 +453,7 @@ nav .profile-details i{
      </style>
    </head>
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <div class="sidebar">
     <div class="logo-details">
       
@@ -494,24 +496,24 @@ nav .profile-details i{
             <span class="links_name">Total order</span>
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#">
             <i class='bx bx-user' ></i>
             <span class="links_name">Team</span>
           </a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           <a href="#">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
           </a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           <a href="#">
             <i class='bx bx-heart' ></i>
             <span class="links_name">Favorites</span>
           </a>
-        </li>
+        </li> -->
         <li>
           <a href="#">
             <i class='bx bx-cog' ></i>
@@ -527,7 +529,7 @@ nav .profile-details i{
       </ul>
   </div>
   <section class="home-section">
-    <nav>
+    <nav style="color:#090ded">
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
@@ -537,9 +539,23 @@ nav .profile-details i{
         <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
-        <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">Kiruba</span>
-        <i class='bx bx-chevron-down' ></i>
+        <img src="logo.jpeg" alt="">
+        <span class="admin_name" id="dropdownbutton" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" >Kiruba</span>
+        <div class="dropdown-menu" id="dropdowbutton">
+          <a href="" class="dropdoewn-items
+          ">ddd</a>
+        </div>
+        
+        <i class='bx bx-chevron-down' >
+         
+        </i>
+        <div>
+          <div class="dropdown-menu" aria-labelledby="dropdownbutton">
+            <a href="" class="dropdown-item">profile</a>
+            <a href="" class="dropdown-item">profile</a>
+
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -594,7 +610,7 @@ nav .profile-details i{
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title"> Sales</div>
+          <div class="title"> <h1>Sales</h1></div>
           <div class="sales-details">
             <ul class="details">
               <li class="topic">Date</li>
@@ -605,10 +621,10 @@ nav .profile-details i{
             </ul>
             <ul class="details">
             <li class="topic">Customer</li>
-            <li><a href="#">Alex Doe</a></li>
-            <li><a href="#">David Mart</a></li>
-            <li><a href="#">Roe Parter</a></li>
-            <li><a href="#">Diana Penty</a></li>
+            <li><a href="#">Kiruba</a></li>
+            <li><a href="#">Karan</a></li>
+            <li><a href="#">Jimmy</a></li>
+            <li><a href="#">Jass</a></li>
           </ul>
           <ul class="details">
             <li class="topic">Sales</li>
@@ -619,10 +635,10 @@ nav .profile-details i{
           </ul>
           <ul class="details">
             <li class="topic">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
+            <li><a href="#">₹204.98</a></li>
+            <li><a href="#">₹24.55</a></li>
+            <li><a href="#">₹25.88</a></li>
+            <li><a href="#">₹170.66</a></li>
           </ul>
           </div>
           <div class="button">
@@ -630,7 +646,7 @@ nav .profile-details i{
           </div>
         </div>
         <div class="top-sales box">
-          <div class="title">Top Seling Product</div>
+          <div class="title"><h1>Top Seling Product</h1></div>
           <ul class="top-sales-details">
             <li>
             <a href="#">
